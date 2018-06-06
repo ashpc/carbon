@@ -2,7 +2,7 @@
   "name": "@carbon/polyfill",
   "private": true,
   "description": "Polyfills required to run the Carbon Design System",
-  "version": "9.0.0-alpha.0",
+  "version": "9.0.0-alpha.1",
   "license": "Apache-2.0",
   "scripts": {
     "build": "node scripts/rollup/build.js",
