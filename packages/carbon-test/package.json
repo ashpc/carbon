@@ -1,10 +1,10 @@
 {
   "name": "@carbon/test",
   "private": true,
-  "version": "9.0.0-alpha.1",
+  "version": "9.0.0-alpha.2",
   "license": "Apache-2.0",
   "dependencies": {
-    "@carbon/polyfill": "9.0.0-alpha.0",
+    "@carbon/polyfill": "^9.0.0-alpha.1",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "enzyme-to-json": "^3.1.2",
