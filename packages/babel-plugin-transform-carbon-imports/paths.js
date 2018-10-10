@@ -2,10 +2,16 @@
 
 const pkgName = 'carbon-components-react';
 const getComponentPath = name => `${pkgName}/es/components/${name}/${name}.js`;
+const getSkeletonComponentPath = (componentName, skeletonName) =>
+  `${pkgName}/es/components/${componentName}/${skeletonName}.js`;
 
 module.exports = {
   Accordion: {
     path: getComponentPath('Accordion'),
+    importSpecifier: false,
+  },
+  AccordionSkeleton: {
+    path: getSkeletonComponentPath('Accordion', 'Accordion.Skeleton'),
     importSpecifier: false,
   },
   AccordionItem: {
@@ -16,12 +22,20 @@ module.exports = {
     path: getComponentPath('Breadcrumb'),
     importSpecifier: false,
   },
+  BreadcrumbSkeleton: {
+    path: getSkeletonComponentPath('Breadcrumb', 'Breadcrumb.Skeleton'),
+    importSpecifier: false,
+  },
   BreadcrumbItem: {
     path: getComponentPath('BreadcrumbItem'),
     importSpecifier: false,
   },
   Button: {
     path: getComponentPath('Button'),
+    importSpecifier: false,
+  },
+  ButtonSkeleton: {
+    path: getSkeletonComponentPath('Button', 'Button.Skeleton'),
     importSpecifier: false,
   },
   Card: {
@@ -52,8 +66,16 @@ module.exports = {
     path: getComponentPath('Checkbox'),
     importSpecifier: false,
   },
+  CheckboxSkeleton: {
+    path: getSkeletonComponentPath('Checkbox', 'Checkbox.Skeleton'),
+    importSpecifier: false,
+  },
   CodeSnippet: {
     path: getComponentPath('CodeSnippet'),
+    importSpecifier: false,
+  },
+  CodeSnippetSkeleton: {
+    path: getSkeletonComponentPath('CodeSnippet', 'CodeSnippet.Skeleton'),
     importSpecifier: false,
   },
   ComboBox: {
@@ -76,8 +98,16 @@ module.exports = {
     path: `${pkgName}/es/components/DataTable/index.js`,
     importSpecifier: false,
   },
+  DataTableSkeleton: {
+    path: getComponentPath('DataTableSkeleton'),
+    importSpecifier: false,
+  },
   DatePicker: {
     path: getComponentPath('DatePicker'),
+    importSpecifier: false,
+  },
+  DatePickerSkeleton: {
+    path: getSkeletonComponentPath('DatePicker', 'DatePicker.Skeleton'),
     importSpecifier: false,
   },
   DatePickerInput: {
@@ -98,6 +128,10 @@ module.exports = {
   },
   DropdownV2: {
     path: getComponentPath('DropdownV2'),
+    importSpecifier: false,
+  },
+  DropdownSkeleton: {
+    path: getSkeletonComponentPath('DropdownV2', 'DropdownV2.Skeleton'),
     importSpecifier: false,
   },
   Footer: {
@@ -122,6 +156,10 @@ module.exports = {
   },
   Icon: {
     path: getComponentPath('Icon'),
+    importSpecifier: false,
+  },
+  IconSkeleton: {
+    path: getSkeletonComponentPath('Icon', 'Icon.Skeleton'),
     importSpecifier: false,
   },
   InteriorLeftNav: {
@@ -164,6 +202,10 @@ module.exports = {
     path: getComponentPath('NumberInput'),
     importSpecifier: false,
   },
+  NumberInputSkeleton: {
+    path: getSkeletonComponentPath('NumberInput', 'NumberInput.Skeleton'),
+    importSpecifier: false,
+  },
   OrderedList: {
     path: getComponentPath('OrderedList'),
     importSpecifier: false,
@@ -192,6 +234,10 @@ module.exports = {
     path: getComponentPath('RadioButton'),
     importSpecifier: false,
   },
+  RadioButtonSkeleton: {
+    path: getSkeletonComponentPath('RadioButton', 'RadioButton.Skeleton'),
+    importSpecifier: false,
+  },
   RadioButtonGroup: {
     path: getComponentPath('RadioButtonGroup'),
     importSpecifier: false,
@@ -200,12 +246,20 @@ module.exports = {
     path: getComponentPath('Search'),
     importSpecifier: false,
   },
+  SearchSkeleton: {
+    path: getSkeletonComponentPath('Search', 'Search.Skeleton'),
+    importSpecifier: false,
+  },
   SecondaryButton: {
     path: getComponentPath('SecondaryButton'),
     importSpecifier: false,
   },
   Select: {
     path: getComponentPath('Select'),
+    importSpecifier: false,
+  },
+  SelectSkeleton: {
+    path: getSkeletonComponentPath('Select', 'Select.Skeleton'),
     importSpecifier: false,
   },
   SelectItem: {
@@ -222,6 +276,10 @@ module.exports = {
   },
   Slider: {
     path: getComponentPath('Slider'),
+    importSpecifier: false,
+  },
+  SliderSkeleton: {
+    path: getSkeletonComponentPath('Slider', 'Slider.Skeleton'),
     importSpecifier: false,
   },
   Tab: {
@@ -264,12 +322,24 @@ module.exports = {
     path: getComponentPath('Tabs'),
     importSpecifier: false,
   },
+  TabsSkeleton: {
+    path: getSkeletonComponentPath('Tabs', 'Tabs.Skeleton'),
+    importSpecifier: false,
+  },
   TextArea: {
     path: getComponentPath('TextArea'),
     importSpecifier: false,
   },
+  TextAreaSkeleton: {
+    path: getSkeletonComponentPath('TextArea', 'TextArea.Skeleton'),
+    importSpecifier: false,
+  },
   TextInput: {
     path: getComponentPath('TextInput'),
+    importSpecifier: false,
+  },
+  TextInputSkeleton: {
+    path: getSkeletonComponentPath('TextInput', 'TextInput.Skeleton'),
     importSpecifier: false,
   },
   RadioTile: {
@@ -292,8 +362,16 @@ module.exports = {
     path: getComponentPath('Toggle'),
     importSpecifier: false,
   },
+  ToggleSkeleton: {
+    path: getSkeletonComponentPath('Toggle', 'Toggle.Skeleton'),
+    importSpecifier: false,
+  },
   ToggleSmall: {
     path: getComponentPath('ToggleSmall'),
+    importSpecifier: false,
+  },
+  ToggleSmallSkeleton: {
+    path: getSkeletonComponentPath('ToggleSmall', 'ToggleSmall.Skeleton'),
     importSpecifier: false,
   },
   ToolbarSearch: {
@@ -334,6 +412,10 @@ module.exports = {
   },
   FileUploader: {
     path: getComponentPath('FileUploader'),
+    importSpecifier: false,
+  },
+  FileUploaderSkeleton: {
+    path: getSkeletonComponentPath('FileUploader', 'FileUploader.Skeleton'),
     importSpecifier: false,
   },
   Filename: {
@@ -408,6 +490,13 @@ module.exports = {
     path: getComponentPath('ProgressIndicator'),
     importSpecifier: true,
   },
+  ProgressIndicatorSkeleton: {
+    path: getSkeletonComponentPath(
+      'ProgressIndicator',
+      'ProgressIndicator.Skeleton'
+    ),
+    importSpecifier: true,
+  },
   ProgressStep: {
     path: getComponentPath('ProgressIndicator'),
     importSpecifier: true,
@@ -436,8 +525,16 @@ module.exports = {
     path: getComponentPath('StructuredList'),
     importSpecifier: true,
   },
+  StructuredListSkeleton: {
+    path: getSkeletonComponentPath('StructuredList', 'StructuredList.Skeleton'),
+    importSpecifier: true,
+  },
   Tag: {
     path: getComponentPath('Tag'),
+    importSpecifier: false,
+  },
+  TagSkeleton: {
+    path: getSkeletonComponentPath('Tag', 'Tag.Skeleton'),
     importSpecifier: false,
   },
   types: {
