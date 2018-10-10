@@ -131,7 +131,7 @@ module.exports = {
     importSpecifier: false,
   },
   DropdownSkeleton: {
-    path: getSkeletonComponentPath('DropdownV2', 'DropdownV2.Skeleton'),
+    path: getSkeletonComponentPath('DropdownV2', 'Dropdown.Skeleton'),
     importSpecifier: false,
   },
   Footer: {
@@ -328,6 +328,10 @@ module.exports = {
   },
   TextArea: {
     path: getComponentPath('TextArea'),
+    importSpecifier: false,
+  },
+  SkeletonText: {
+    path: getComponentPath('SkeletonText'),
     importSpecifier: false,
   },
   TextAreaSkeleton: {
